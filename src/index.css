@@ -1,0 +1,30 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .link-app {
+    @apply px-2 transition-all  hover:text-gray-300 
+  }
+  .form-control {
+    @apply w-full rounded-lg bg-[#3a3a3a] py-5 text-lg px-2 text-white outline-none 
+  }
+  .btn {
+    @apply mt-10 w-full rounded-lg bg-[#e50914] p-4 
+  }
+}
